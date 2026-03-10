@@ -1,23 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="bn">
 <head>
-<title>My Portfolio</title>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Jewel Rana | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* CSS সরাসরি এখানে দেওয়া হলো যাতে আপনার আলাদা ফাইল ম্যানেজ করতে না হয় */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background-color: #f4f7f6; color: #333; line-height: 1.6; }
+        
+        header { background: #2c3e50; color: white; padding: 60px 20px; text-align: center; }
+        header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        header p { font-size: 1.1rem; opacity: 0.9; }
 
+        .container { max-width: 900px; margin: 30px auto; padding: 0 20px; }
+        
+        section { background: white; padding: 30px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h2 { border-bottom: 2px solid #3498db; display: inline-block; margin-bottom: 20px; padding-bottom: 5px; color: #2c3e50; }
+
+        .skills-list { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; }
+        .skills-list li { background: #3498db; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9rem; }
+
+        .project-card { border-left: 4px solid #3498db; padding-left: 15px; margin-bottom: 15px; }
+        .project-card h3 { font-size: 1.2rem; margin-bottom: 5px; }
+
+        footer { text-align: center; padding: 40px; color: #777; font-size: 0.9rem; }
+        
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
 <body>
 
-<h1>Hello, I'm Jewel</h1>
-<p>I am learning web development.</p>
+    <header>
+        <h1>Mohammad Jewel Rana (Russell)</h1>
+        <p>IT Specialist | Infrastructure & Cloud Administrator</p>
+    </header>
 
-<h2>My Projects</h2>
-<ul>
-<li>Calculator App</li>
-<li>Simple Website</li>
-<li>Todo List App</li>
-</ul>
+    <div class="container">
+        <section id="about">
+            <h2>আমার সম্পর্কে</h2>
+            <p>আমি একজন আইটি পেশাদার। আমি মূলত এন্টারপ্রাইজ সিস্টেম ম্যানেজমেন্ট, ক্লাউড অ্যাডমিনিস্ট্রেশন (Microsoft 365 & Azure) এবং ERP সিস্টেম (Odoo) নিয়ে কাজ করতে স্বাচ্ছন্দ্যবোধ করি। নতুন প্রযুক্তি শেখা এবং তা বাস্তবায়নে আমার বিশেষ আগ্রহ রয়েছে।</p>
+        </section>
 
-<h2>Contact</h2>
-<p>Email: jewel@email.com</p>
+        <section id="skills">
+            <h2>দক্ষতা (Skills)</h2>
+            <ul class="skills-list">
+                <li>Cloud Computing (Azure/M365)</li>
+                <li>Odoo ERP Administration</li>
+                <li>Windows Server & Networking</li>
+                <li>IT Security & Compliance</li>
+                <li>IT Infrastructure Management</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>প্রজেক্ট সমূহ</h2>
+            <div class="project-card">
+                <h3>Odoo ERP Implementation</h3>
+                <p>একটি প্রতিষ্ঠানের জন্য সম্পূর্ণ অপারেশনাল ডাটা এন্ট্রি এবং মডিউল কাস্টমাইজেশন সহ Odoo ERP সফলভাবে বাস্তবায়ন করেছি।</p>
+            </div>
+            <div class="project-card">
+                <h3>Cloud Migration</h3>
+                <p>অ্যাজুর সাবস্ক্রিপশন ম্যানেজমেন্ট এবং অফিস ৩৬৫ এনভায়রনমেন্ট সেটআপ ও সিকিউরিটি কনফিগারেশন।</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>যোগাযোগ</h2>
+            <p>ইমেইল: <a href="mailto:your-email@example.com" style="color: #3498db;">your-email@example.com</a></p>
+            <p>লিঙ্কডইন: <a href="#" target="_blank" style="color: #3498db;">linkedin.com/in/yourusername</a></p>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2026 Mohammad Jewel Rana | All Rights Reserved
+    </footer>
 
 </body>
 </html>
